@@ -46,7 +46,7 @@ public class FK_TC4400_ValidateUserName extends BaseClass {
   @AfterClass
   public void tearDown()
   {
-	 driver.quit();
+	 BaseClass.closeBrowser();
   }
   }
 
