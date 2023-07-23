@@ -33,5 +33,9 @@ public class BaseClass {
 		Utility.impliciteWait(driver, 5);
 			
 	}
-	
+	public static void closeBrowser()
+	{
+		driver.quit();
+		Utility.impliciteWait(driver, 5);
+	}
 }
