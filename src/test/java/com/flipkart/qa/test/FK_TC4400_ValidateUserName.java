@@ -20,7 +20,7 @@ public class FK_TC4400_ValidateUserName extends BaseClass {
 	@BeforeClass
 	public void openingBrowser() throws Throwable
 	{	
-		BaseClass.lanuchBrowser();
+		BaseClass.launchBrowser();
 		lp=new LoginPage(driver);
 	}
 	@BeforeMethod
