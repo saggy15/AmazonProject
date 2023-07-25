@@ -1,16 +1,22 @@
 package com.flipkart.qa.base;
 
+import java.io.File;
 import java.io.IOException;
 
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.io.FileHandler;
 import org.testng.Reporter;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 import com.flipkart.qa.util.Utility;
+
+import net.bytebuddy.utility.RandomString;
 
 public class BaseClass {
 	public static WebDriver driver;
@@ -37,6 +43,14 @@ public class BaseClass {
 		Utility.impliciteWait(driver, 5);
 			
 	}
+	public void takeScreenshot(String FileName) throws IOException
+	{
+		File source=((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
+		String random=RandomString.make(3);
+		File dest=new File("E:\\EclipseProject\\flipkart\\TakeScreenshot\\"+FileName+random+".png");
+		FileHandler.copy(source, dest);
+	}
+
 	public static void closeBrowser()
 	{
 		driver.quit();
