@@ -28,14 +28,7 @@ public class Utility {
 		WebDriverWait wait=new WebDriverWait(driver,Duration.ofSeconds(time));
 		wait.until(ExpectedConditions.visibilityOf(element));
 	}
-	public static void takeScreenshot(WebDriver driver, String FileName) throws IOException
-	{
-		File source=((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
-		String random=RandomString.make(3);
-		File dest=new File("E:\\EclipseProject\\flipkart\\TakeScreenshot\\"+FileName+random+".png");
-		FileHandler.copy(source, dest);
-	}
-	public static String  readConfigProp(String propName) throws IOException
+		public static String  readConfigProp(String propName) throws IOException
 	{
 		Properties prop=new Properties();
 		FileInputStream file=new FileInputStream("E:\\EclipseProject\\flipkart\\src\\main\\java\\com\\flipkart\\qa\\config\\config.properties");
