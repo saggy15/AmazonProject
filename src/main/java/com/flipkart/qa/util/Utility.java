@@ -15,6 +15,8 @@ import org.openqa.selenium.io.FileHandler;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+import net.bytebuddy.utility.RandomString;
+
 public class Utility {
 	
 	public static void impliciteWait(WebDriver driver, int time)
@@ -29,7 +31,8 @@ public class Utility {
 	public static void takeScreenshot(WebDriver driver, String FileName) throws IOException
 	{
 		File source=((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
-		File dest=new File("E:\\EclipseProject\\flipkart\\TakeScreenshot\\FileName+");
+		String random=RandomString.make(3);
+		File dest=new File("E:\\EclipseProject\\flipkart\\TakeScreenshot\\"+FileName+random+".png");
 		FileHandler.copy(source, dest);
 	}
 	public static String  readConfigProp(String propName) throws IOException
