@@ -1,4 +1,4 @@
-package com.flipkart.qa.util;
+package com.amazon.qa.util;
 
 import java.io.File;
 import java.io.FileInputStream;

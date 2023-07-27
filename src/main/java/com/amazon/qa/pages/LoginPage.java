@@ -1,4 +1,4 @@
-package com.flipkart.qa.pages;
+package com.amazon.qa.pages;
 
 import java.io.IOException;
 
@@ -9,7 +9,7 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.Reporter;
 
-import com.flipkart.qa.util.Utility;
+import com.amazon.qa.util.Utility;
 
 public class LoginPage {
 	@FindBy(xpath="//a[text()='Login']")

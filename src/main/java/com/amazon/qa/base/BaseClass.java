@@ -1,4 +1,4 @@
-package com.flipkart.qa.base;
+package com.amazon.qa.base;
 
 import java.io.File;
 import java.io.IOException;
@@ -14,7 +14,7 @@ import org.testng.Reporter;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
-import com.flipkart.qa.util.Utility;
+import com.amazon.qa.util.Utility;
 
 import net.bytebuddy.utility.RandomString;
 

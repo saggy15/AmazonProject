@@ -1,4 +1,4 @@
-package com.flipkart.qa.listener;
+package com.amazon.qa.listener;
 
 import java.io.IOException;
 
@@ -6,7 +6,7 @@ import org.testng.ITestListener;
 import org.testng.ITestResult;
 import org.testng.Reporter;
 
-import com.flipkart.qa.base.BaseClass;
+import com.amazon.qa.base.BaseClass;
 
 public class Listener extends BaseClass implements ITestListener {
 	BaseClass b=new BaseClass();

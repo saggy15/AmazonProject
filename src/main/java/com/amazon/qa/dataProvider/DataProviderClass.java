@@ -1,4 +1,4 @@
-package com.flipkart.qa.dataProvider;
+package com.amazon.qa.dataProvider;
 
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;

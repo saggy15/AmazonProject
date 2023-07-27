@@ -9,9 +9,9 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
-import com.flipkart.qa.base.BaseClass;
-import com.flipkart.qa.pages.LoginPage;
-import com.flipkart.qa.util.Utility;
+import com.amazon.qa.base.BaseClass;
+import com.amazon.qa.pages.LoginPage;
+import com.amazon.qa.util.Utility;
 
 public class FK_TC4400_ValidateUserName extends BaseClass {
 	//WebDriver driver;
