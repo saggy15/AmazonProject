@@ -2,11 +2,12 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Suite">
 <listeners>
-<listener class-name="com.flipkart.qa.listener.Listener"></listener></listeners>
+<listener class-name="com.amazon.qa.listener.Listener"></listener>
+</listeners>
   <test thread-count="5" name="ChromeTest">
 <parameter name="bName" value="firefox"></parameter>
 <classes>
-<class name="com.flipkart.qa.test.FK_TC4400_ValidateUserName"></class>
+<class name="com.Amazon.qa.test.Az_TC4401_getProductRating"></class>
 </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
