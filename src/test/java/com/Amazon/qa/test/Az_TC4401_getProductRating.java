@@ -1,9 +1,9 @@
 package com.Amazon.qa.test;
-
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Set;
 
+import org.testng.Assert;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeClass;
@@ -30,6 +30,7 @@ public class Az_TC4401_getProductRating extends BaseClass {
 	@BeforeMethod
 	public void searchProduct() throws IOException, InterruptedException
 	{
+		 
 		Sp.clickOnsearchbox();
 		Sp.clickonsearchButton();
 //		Thread.sleep(2000);
@@ -50,6 +51,7 @@ public class Az_TC4401_getProductRating extends BaseClass {
   @AfterMethod
   public void logout() throws InterruptedException
   {
+	 
 	  Thread.sleep(2000);
 	  driver.close();
   }

@@ -44,13 +44,7 @@ public class BaseClass {
 		Utility.impliciteWait(driver, 5);
 			
 	}
-	public void takeScreenshot(String FileName) throws IOException
-	{
-		File source=((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
-		String random=RandomString.make(3);
-		File dest=new File("Screenshot"+FileName+random+".png");
-		FileHandler.copy(source, dest);
-	}
+	
 
 	public static void closeBrowser()
 	{

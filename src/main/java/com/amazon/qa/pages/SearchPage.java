@@ -8,7 +8,11 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.Reporter;
 
-public class SearchPage {
+import com.amazon.qa.util.Utility;
+
+public class SearchPage  {
+	WebDriver driver;
+	
 	@FindBy(id="twotabsearchtextbox")
 	private WebElement searchbox ;
 	@FindBy(id="nav-search-submit-button")
@@ -19,9 +23,11 @@ public class SearchPage {
 	public SearchPage(WebDriver driver)
 	{
 		PageFactory.initElements(driver, this);
+		this.driver=driver;
 	}
 	public void clickOnsearchbox()
 	{
+		
 		Reporter.log("clicking on search box", true);
 		searchbox.sendKeys("phy body wash for men");
 		
@@ -33,6 +39,7 @@ public class SearchPage {
 	}
 	public void clickOnProduct()
 	{
+		Utility.expliciteWait(driver, 5, product);
 		Reporter.log("Clicking on Product", true);
 		product.click();
 	}

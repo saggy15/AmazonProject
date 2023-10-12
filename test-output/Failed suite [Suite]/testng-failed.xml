@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Failed suite [Suite]]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="com.amazon.qa.listener.Listener"/>
+  </listeners>
+  <test thread-count="5" name="ChromeTest(failed)(failed)">
+    <parameter name="bName" value="firefox"/>
+    <classes>
+      <class name="com.Amazon.qa.test.Az_TC4401_getProductRating">
+        <methods>
+          <include name="searchProduct"/>
+          <include name="openingBrowser"/>
+          <include name="ProductRating"/>
+          <include name="logout"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.Amazon.qa.test.Az_TC4401_getProductRating -->
+    </classes>
+  </test> <!-- ChromeTest(failed)(failed) -->
+</suite> <!-- Failed suite [Failed suite [Suite]] -->

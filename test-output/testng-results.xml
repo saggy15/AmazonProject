@@ -1,99 +1,41 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="1" passed="0" failed="0" skipped="1">
   <reporter-output>
     <line>
       <![CDATA[launching chromeBrowser]]>
     </line>
     <line>
-      <![CDATA[clicking on search box]]>
-    </line>
-    <line>
-      <![CDATA[searching the product]]>
-    </line>
-    <line>
-      <![CDATA[Clicking on Product]]>
-    </line>
-    <line>
-      <![CDATA[Proxy element for: DefaultElementLocator 'By.xpath: //*[@id='acrCustomerReviewText']' this is a Product rating]]>
-    </line>
-    <line>
-      <![CDATA[TC ProductRating is passed]]>
+      <![CDATA[TC ProductRating is skipped]]>
     </line>
   </reporter-output>
-  <suite started-at="2023-07-29T13:30:39 IST" name="Suite" finished-at="2023-07-29T13:33:54 IST" duration-ms="194652">
+  <suite started-at="2023-10-12T14:17:09 IST" name="Suite" finished-at="2023-10-12T14:18:28 IST" duration-ms="78799">
     <groups>
     </groups>
-    <test started-at="2023-07-29T13:30:39 IST" name="ChromeTest" finished-at="2023-07-29T13:33:54 IST" duration-ms="194652">
+    <test started-at="2023-10-12T14:17:09 IST" name="ChromeTest" finished-at="2023-10-12T14:18:28 IST" duration-ms="78799">
       <class name="com.Amazon.qa.test.Az_TC4401_getProductRating">
-        <test-method is-config="true" signature="openingBrowser()[pri:0, instance:com.Amazon.qa.test.Az_TC4401_getProductRating@79924b]" started-at="2023-07-29T13:30:39 IST" name="openingBrowser" finished-at="2023-07-29T13:32:02 IST" duration-ms="83444" status="PASS">
-          <reporter-output>
-            <line>
-              <![CDATA[launching chromeBrowser]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- openingBrowser -->
-        <test-method is-config="true" signature="searchProduct()[pri:0, instance:com.Amazon.qa.test.Az_TC4401_getProductRating@79924b]" started-at="2023-07-29T13:32:02 IST" name="searchProduct" finished-at="2023-07-29T13:33:34 IST" duration-ms="91820" status="PASS">
-          <reporter-output>
-            <line>
-              <![CDATA[clicking on search box]]>
-            </line>
-            <line>
-              <![CDATA[searching the product]]>
-            </line>
-            <line>
-              <![CDATA[Clicking on Product]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- searchProduct -->
-        <test-method signature="ProductRating()[pri:0, instance:com.Amazon.qa.test.Az_TC4401_getProductRating@79924b]" started-at="2023-07-29T13:33:34 IST" name="ProductRating" finished-at="2023-07-29T13:33:52 IST" duration-ms="17270" status="PASS">
-          <reporter-output>
-            <line>
-              <![CDATA[Proxy element for: DefaultElementLocator 'By.xpath: //*[@id='acrCustomerReviewText']' this is a Product rating]]>
-            </line>
-            <line>
-              <![CDATA[TC ProductRating is passed]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- ProductRating -->
-        <test-method is-config="true" signature="logout()[pri:0, instance:com.Amazon.qa.test.Az_TC4401_getProductRating@79924b]" started-at="2023-07-29T13:33:52 IST" name="logout" finished-at="2023-07-29T13:33:54 IST" duration-ms="2048" status="FAIL">
-          <exception class="org.openqa.selenium.WebDriverException">
+        <test-method is-config="true" signature="openingBrowser()[pri:0, instance:com.Amazon.qa.test.Az_TC4401_getProductRating@a514af7]" started-at="2023-10-12T14:17:09 IST" name="openingBrowser" finished-at="2023-10-12T14:18:28 IST" duration-ms="78734" status="FAIL">
+          <exception class="org.openqa.selenium.remote.NoSuchDriverException">
             <message>
-              <![CDATA[disconnected: not connected to DevTools
-  (failed to check if window was closed: disconnected: not connected to DevTools)
-  (Session info: chrome=115.0.5790.110)
-Build info: version: '4.10.0', revision: 'c14d967899'
+              <![CDATA[Unable to obtain: Capabilities {browserName: chrome, goog:chromeOptions: {args: [--remote-allow-origins=*, incognito, start-maximized], extensions: []}}, error Command failed with code: 65, executed: [C:\Users\ahirr\AppData\Local\Temp\selenium-manager205314755340640015137504486767463760\selenium-manager.exe, --browser, chrome, --output, json]
+request or response body error: error reading a body from connection: connection reset
+Build info: version: '4.11.0', revision: '040bc5406b'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.2'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [e36292adfb256033a729b9e5e52e21d5, close {}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 115.0.5790.110, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\ahirr\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:56554}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56554/devtoo..., se:cdpVersion: 115.0.5790.110, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: e36292adfb256033a729b9e5e52e21d5]]>
+Driver info: driver.version: ChromeDriver]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.WebDriverException: disconnected: not connected to DevTools
-  (failed to check if window was closed: disconnected: not connected to DevTools)
-  (Session info: chrome=115.0.5790.110)
-Build info: version: '4.10.0', revision: 'c14d967899'
+              <![CDATA[org.openqa.selenium.remote.NoSuchDriverException: Unable to obtain: Capabilities {browserName: chrome, goog:chromeOptions: {args: [--remote-allow-origins=*, incognito, start-maximized], extensions: []}}, error Command failed with code: 65, executed: [C:\Users\ahirr\AppData\Local\Temp\selenium-manager205314755340640015137504486767463760\selenium-manager.exe, --browser, chrome, --output, json]
+request or response body error: error reading a body from connection: connection reset
+Build info: version: '4.11.0', revision: '040bc5406b'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.2'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [e36292adfb256033a729b9e5e52e21d5, close {}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 115.0.5790.110, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\ahirr\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:56554}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56554/devtoo..., se:cdpVersion: 115.0.5790.110, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: e36292adfb256033a729b9e5e52e21d5
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:199)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:132)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:51)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:531)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:590)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:594)
-at org.openqa.selenium.remote.RemoteWebDriver.close(RemoteWebDriver.java:418)
-at com.Amazon.qa.test.Az_TC4401_getProductRating.logout(Az_TC4401_getProductRating.java:54)
+Driver info: driver.version: ChromeDriver
+at org.openqa.selenium.remote.service.DriverFinder.getPath(DriverFinder.java:25)
+at org.openqa.selenium.remote.service.DriverFinder.getPath(DriverFinder.java:13)
+at org.openqa.selenium.chrome.ChromeDriver.generateExecutor(ChromeDriver.java:99)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:88)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:83)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:72)
+at com.amazon.qa.base.BaseClass.launchBrowser(BaseClass.java:33)
+at com.Amazon.qa.test.Az_TC4401_getProductRating.openingBrowser(Az_TC4401_getProductRating.java:26)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -102,15 +44,8 @@ at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelpe
 at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
 at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
 at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
-at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:700)
-at org.testng.internal.TestInvoker.runAfterGroupsConfigurations(TestInvoker.java:676)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:660)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:176)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:122)
 at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 at org.testng.TestRunner.privateRun(TestRunner.java:794)
 at org.testng.TestRunner.run(TestRunner.java:596)
@@ -127,13 +62,100 @@ at org.testng.TestNG.run(TestNG.java:1031)
 at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: org.openqa.selenium.WebDriverException: Command failed with code: 65, executed: [C:\Users\ahirr\AppData\Local\Temp\selenium-manager205314755340640015137504486767463760\selenium-manager.exe, --browser, chrome, --output, json]
+request or response body error: error reading a body from connection: connection reset
+Build info: version: '4.11.0', revision: '040bc5406b'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.2'
+Driver info: driver.version: ChromeDriver
+at org.openqa.selenium.manager.SeleniumManager.runCommand(SeleniumManager.java:151)
+at org.openqa.selenium.manager.SeleniumManager.getDriverPath(SeleniumManager.java:273)
+at org.openqa.selenium.remote.service.DriverFinder.getPath(DriverFinder.java:22)
+... 33 more
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.WebDriverException -->
+          </exception> <!-- org.openqa.selenium.remote.NoSuchDriverException -->
+          <reporter-output>
+            <line>
+              <![CDATA[launching chromeBrowser]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- openingBrowser -->
+        <test-method is-config="true" signature="searchProduct()[pri:0, instance:com.Amazon.qa.test.Az_TC4401_getProductRating@a514af7]" started-at="2023-10-12T14:18:28 IST" name="searchProduct" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1697100508196" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchProduct -->
+        <test-method signature="ProductRating()[pri:0, instance:com.Amazon.qa.test.Az_TC4401_getProductRating@a514af7]" started-at="2023-10-12T14:18:28 IST" name="ProductRating" finished-at="2023-10-12T14:18:28 IST" duration-ms="0" status="SKIP">
+          <exception class="org.openqa.selenium.remote.NoSuchDriverException">
+            <message>
+              <![CDATA[Unable to obtain: Capabilities {browserName: chrome, goog:chromeOptions: {args: [--remote-allow-origins=*, incognito, start-maximized], extensions: []}}, error Command failed with code: 65, executed: [C:\Users\ahirr\AppData\Local\Temp\selenium-manager205314755340640015137504486767463760\selenium-manager.exe, --browser, chrome, --output, json]
+request or response body error: error reading a body from connection: connection reset
+Build info: version: '4.11.0', revision: '040bc5406b'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.2'
+Driver info: driver.version: ChromeDriver]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.remote.NoSuchDriverException: Unable to obtain: Capabilities {browserName: chrome, goog:chromeOptions: {args: [--remote-allow-origins=*, incognito, start-maximized], extensions: []}}, error Command failed with code: 65, executed: [C:\Users\ahirr\AppData\Local\Temp\selenium-manager205314755340640015137504486767463760\selenium-manager.exe, --browser, chrome, --output, json]
+request or response body error: error reading a body from connection: connection reset
+Build info: version: '4.11.0', revision: '040bc5406b'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.2'
+Driver info: driver.version: ChromeDriver
+at org.openqa.selenium.remote.service.DriverFinder.getPath(DriverFinder.java:25)
+at org.openqa.selenium.remote.service.DriverFinder.getPath(DriverFinder.java:13)
+at org.openqa.selenium.chrome.ChromeDriver.generateExecutor(ChromeDriver.java:99)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:88)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:83)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:72)
+at com.amazon.qa.base.BaseClass.launchBrowser(BaseClass.java:33)
+at com.Amazon.qa.test.Az_TC4401_getProductRating.openingBrowser(Az_TC4401_getProductRating.java:26)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:176)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:122)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: org.openqa.selenium.WebDriverException: Command failed with code: 65, executed: [C:\Users\ahirr\AppData\Local\Temp\selenium-manager205314755340640015137504486767463760\selenium-manager.exe, --browser, chrome, --output, json]
+request or response body error: error reading a body from connection: connection reset
+Build info: version: '4.11.0', revision: '040bc5406b'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.2'
+Driver info: driver.version: ChromeDriver
+at org.openqa.selenium.manager.SeleniumManager.runCommand(SeleniumManager.java:151)
+at org.openqa.selenium.manager.SeleniumManager.getDriverPath(SeleniumManager.java:273)
+at org.openqa.selenium.remote.service.DriverFinder.getPath(DriverFinder.java:22)
+... 33 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.remote.NoSuchDriverException -->
+          <reporter-output>
+            <line>
+              <![CDATA[TC ProductRating is skipped]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- ProductRating -->
+        <test-method is-config="true" signature="logout()[pri:0, instance:com.Amazon.qa.test.Az_TC4401_getProductRating@a514af7]" started-at="2023-10-12T14:18:28 IST" name="logout" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1697100508212" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logout -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.Amazon.qa.test.Az_TC4401_getProductRating@79924b]" started-at="2023-07-29T13:33:54 IST" name="tearDown" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1690617834167" status="SKIP">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.Amazon.qa.test.Az_TC4401_getProductRating@a514af7]" started-at="2023-10-12T14:18:28 IST" name="tearDown" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1697100508214" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
